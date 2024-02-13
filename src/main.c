@@ -10,14 +10,14 @@
 #define HR_NIGHT        18
 
 // Colors
-#ifdef PBL_COLOR
-  #define PALETTE_SIZE    2
-  #define COLOR_FG(day)   ((day) ? GColorDarkGreen : GColorScreaminGreen)
-  #define COLOR_BG(day)   ((day) ? GColorScreaminGreen : GColorDarkGreen)
-#else
-  #define COLOR_FG(day)   ((day) ? GColorBlack : GColorWhite)
-  #define COLOR_BG(day)   ((day) ? GColorWhite : GColorBlack)
-#endif
+// #ifdef PBL_COLOR
+#define PALETTE_SIZE    2
+//   #define COLOR_FG(day)   ((day) ? GColorDarkGreen : GColorScreaminGreen)
+//   #define COLOR_BG(day)   ((day) ? GColorScreaminGreen : GColorDarkGreen)
+// #else
+#define COLOR_FG(day)   ((day) ? GColorBlack : GColorWhite)
+#define COLOR_BG(day)   ((day) ? GColorWhite : GColorBlack)
+// #endif
 
 #define FMT_TIME(mil)   (mil ? "%H:%M" : "%I:%M")
 #define FMT_TIME_LEN    sizeof("00:00")
